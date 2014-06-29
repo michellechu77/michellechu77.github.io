@@ -1,0 +1,41 @@
+body {
+	background-color: white;
+	font-family: Helvetica;
+	color: black;
+}
+
+header {
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	word-spacing: 2px;
+	line-height: 3px;
+}
+
+#sidebar {
+	float:left;
+	padding-left: 30px;
+	width: 15%;
+	height: 100%;
+	font-size: 12px;
+	border: 2px dashed #fadb4c;
+	margin-top: 40px;
+}
+
+/*#border {
+	width: 90%;
+	height: 100%;
+	border: 6px dashed #fadb4c;
+	margin: 0 auto;
+	margin-top: 40px;
+}*/
+
+
+
+/* #content {
+	width: 98%;
+	height: 100%;
+	background-color: white;
+	color: black;
+	margin: 9px;
+} */
