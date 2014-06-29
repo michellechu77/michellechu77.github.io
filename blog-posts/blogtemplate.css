@@ -22,6 +22,9 @@ header {
 	margin-top: 40px;
 }
 
+img {
+	text-align: center;
+}
 /*#border {
 	width: 90%;
 	height: 100%;
