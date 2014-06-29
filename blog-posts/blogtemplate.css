@@ -30,7 +30,7 @@ header {
 }
 
 img {
-	text-align: center;
+	float: center;
 }
 /*#border {
 	width: 90%;
