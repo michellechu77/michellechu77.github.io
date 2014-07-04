@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+	<title>Michu's Dev Story</title>
+	<link rel="stylesheet" type="text/css" href="http://michellechu77.github.io/blog-posts/blogtemplate.css"> 
+</head>
+
+<body>
+	<header>
+		<img src="http://michellechu77.github.io/blog-posts/images/Color.png">
+		<p> ------------------------------------------- </p>
+		<p> Hello, I often go by the name Michu. </p>
+		<p> And here is my Dev Bootcamp Story. </p>
+	</header>
+
+	<div id="post">
+		<h2> Technical Post #2: Static, Relative, Absolute, and Fixed: What's the Difference? </h2>
+
+		<p>Though the fundamental concept of <b>'HTML (Content) + CSS (Presentation) = Webpages</b> seems simple at a high-level, when you actually experiment and delve into the intricacies of both HTML and CSS, you quickly realize the criticality of understanding the 'Why' of things. For example, when trying to space an image on the page, sometimes I haphazardly fuddle through adding margins and paddings -almost in a trial-and-error process - until I'm feeling satisfied or too frustrated, whichever comes first.</p>
+		 
+		<p>The same issue applies for positioning elements, and as this is a fundamental and critical aspect of web design, I feel it's worth the time to take a look under the hood and really understand what is going on. This will hopefully save you some time, mental agony, and allow you to better put into fruition your creativity! </p>
+		 
+		<p>There are four main positioning attributes in CSS:</p>
+
+	<ul>
+		<br>
+	  <li><b>Static Positioning:</b></li>
+	  	<ul>
+		  	<li>Is the default position for all elements.</li>
+		  	<li>Displays elements as you would expect them to appear - in a standard one-after-another order.</li>
+		  	<li>Is typically not used unless you're overriding another positioning declaration, but this shouldn't happen much since positioning doesn't cascade.</li>
+	 	</ul>
+	 	<br>
+	 <div class="wrapper">
+	 	<img src="http://webdevbydoing.com/wp-content/themes/WebDevByDoing/images/static-position.jpg" border="3" height="250px" width="230px">
+	 </div>
+	 	<br>
+	  <li><b>Relative Positioning:</b></li>
+	  	<ul>
+		  	<li>Basically means, "Relative to Itself." You can use attributes, top, left, bottom, and right to define how many pixels the element should move off of from the specified side. </li>
+		  		<ul>
+		  			<li>Ex: top: 50px takes 50px from the top, and basically pushes the element down</li>
+		  		</ul>
+		  	<li>Doesn’t affect other static elements; static elements wont adjust to an element’s relative positions so overlap is possible. </li>
+		  		<ul>
+		  			<li>Use z-index for layering order of overlapping elements (default: 1, set z-index to a higher number to bring to front)</li>
+		  		</ul>
+		  	<li>Limits the scope of Absolutely positioned child elements (Absolute positioning explained below)</li>
+		  		<ul>
+		  			<li>Child elements will be kept within the parent element. If Parent is left Static, child elements will position themselves to the browser.</li>
+		  		</ul>
+	 	</ul>
+	 		<br>
+	 		<div class="wrapper">
+	 	 	<img src="http://webdevbydoing.com/wp-content/themes/WebDevByDoing/images/relative-position.jpg" border="3" height="250px" width="230px">
+	 	 	</div>
+	 	 	<br>
+	  <li><b>Absolute Positioning:</b></li>
+	  		<li>'Removes' the element from the document and places it according to the declared top, bottom, left, and right attributes.</li>
+	  			<ul>
+		  			<li>Elements using absolute are removed from the DOM, thus static elements will move up to fill the space the absolute element was.</li>
+		  		</ul>
+	  		<li>Is determined by its parent elements</li>
+	  			<ul>
+		  			<li>If there are no parent elements or they are static, elements are positioned based on <body></li>
+		  		</ul>
+		  	<br>
+		  	<div class="wrapper">
+		  	<img src="http://webdevbydoing.com/wp-content/themes/WebDevByDoing/images/absolute-position.jpg" border="3" height="250px" width="230px">
+		  	</div>
+		  	<br>
+	  <li><b>Fixed Positioning:</b></li>
+	  		<li>Puts elements relative to the viewport, or browser window.</li>
+		  	<li>Holds elements in their position even when the page is scrolled.</li>
+	</ul> 
+
+	<p>Check out the simulator at the bottom of <a href="http://www.webdevbydoing.com/css/whats-the-difference-between-static-relative-absolute-and-fixed-positioning/#.U7X4V42VlOg">this page </a>for practice! </p>
+
+	<p>Resources:</p>
+		<ul>
+			<li><a href="http://www.webdevbydoing.com/css/whats-the-difference-between-static-relative-absolute-and-fixed-positioning/#.U7X4V42VlOg">"What's The Difference Between Static, Relative, Absolute, and Fixed Positioning?"</a></li>
+			<li><a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/">"Learning CSS Positioning in Ten Steps"</a></li>
+			<li><a href="http://css-tricks.com/absolute-positioning-inside-relative-positioning/">"Absolute Positioning Inside Relative Positioning"</a></li>
+		</ul>
+	</div>
+</body>
+
+</html>

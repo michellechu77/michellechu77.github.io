@@ -4,6 +4,12 @@ body {
 	color: black;
 }
 
+.wrapper{
+	width:100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
 header {
 	text-align: center;
 	font-size: 12px;
@@ -11,6 +17,8 @@ header {
 	word-spacing: 2px;
 	line-height: 3px;
 }
+
+
 
 #sidebar {
 	float:left;
@@ -28,6 +36,8 @@ header {
 	height: 100%;
 	font-size: 14px;
 }
+
+
 /*#border {
 	width: 90%;
 	height: 100%;
