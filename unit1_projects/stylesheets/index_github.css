@@ -24,12 +24,16 @@ header nav {
 	font-family: helvetica;
 }
 
+header nav ul li{
+	display: inline;
+}
+
 header nav ul li a{
-	display:inline;
 	padding-left: 40px;
 	font-size: 21px;
 	color:white;
-	font-style: none;
+	font-style: bold;
+	text-decoration: none;
 }
 
 header nav ul li a:hover{
