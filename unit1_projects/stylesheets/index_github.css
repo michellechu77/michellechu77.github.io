@@ -1,0 +1,86 @@
+body{
+	background-image:url("http://michellechu77.github.io/blog-posts/images/michupic.png");
+	background-repeat:no-repeat;
+	background-size: cover;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+header {
+	width:100%;
+	min-width: 1000px;
+	height:70px;
+	background: black;
+	opacity: 0.65;
+	position:absolute;
+	top:0;
+	margin: 0px;
+	padding: 0px;
+}
+
+header nav {
+	color:white;
+	font-family: helvetica;
+}
+
+header nav ul li{
+	display:inline;
+	padding-left: 40px;
+	font-size: 21px;
+}
+
+header nav ul li:hover{
+	display:inline;
+	padding-left: 40px;
+	color:#fadb4c;
+}
+
+#logo {
+	padding-top: 130px;
+}
+
+#about{
+	font-family: helvetica;
+	color: white;
+	font-style: bold;
+	font-size: 18px;
+	line-height: 8px;
+	padding-top: 20px;
+}
+
+#footer {
+	width:100%;
+	min-width: 1000px;
+	height:70px;
+	background: #fadb4c;
+	opacity: 0.5;
+	position: absolute;
+	bottom:0;
+	margin: 0px;
+	padding: 0px;
+}
+
+#footer nav ul li{
+	display: inline;
+}
+
+#footer nav ul li img{
+	height:4%;
+	width:4%;
+	text-align: center;
+	padding-left: 10px;
+}
+
+#footer nav ul li img:hover{
+	height:4.5%;
+	width:4.5%;
+}
+
+.wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+	width:100%;
+	text-align: center;
+}
+
