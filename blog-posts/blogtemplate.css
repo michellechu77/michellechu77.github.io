@@ -4,11 +4,7 @@ body {
 	color: black;
 }
 
-.wrapper{
-	width:100%;
-	max-width: 1400px;
-	margin: 0 auto;
-}
+
 
 header {
 	text-align: center;
@@ -17,8 +13,6 @@ header {
 	word-spacing: 2px;
 	line-height: 3px;
 }
-
-
 
 #sidebar {
 	float:left;
@@ -37,6 +31,12 @@ header {
 	font-size: 14px;
 }
 
+.wrapper{
+	width:100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	text-align: center;
+}
 
 /*#border {
 	width: 90%;
@@ -45,8 +45,6 @@ header {
 	margin: 0 auto;
 	margin-top: 40px;
 }*/
-
-
 
 /* #content {
 	width: 98%;
