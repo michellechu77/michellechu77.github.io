@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <title>Michu's Dev Story</title>
+  <link rel="stylesheet" type="text/css" href="http://michellechu77.github.io/blog-posts/blogtemplate.css">
+</head>
+
+<body>
+  <header>
+    <img src="http://michellechu77.github.io/blog-posts/images/Color.png">
+    <p> ------------------------------------------- </p>
+    <p> Hello, I often go by the name Michu. </p>
+    <p> And here is my Dev Bootcamp Story. </p>
+  </header>
+
+  <div id="post">
+    <h2>A Glance into Ruby's Class-iness</h2>
+
+<p>At a high level, Ruby is an Object-Oriented language, meaning everything from Strings, classes, Instances of classes, and Floats are all read by Ruby as objects. Knowing this and the generally indolent inclination for programmers to make things as easy as possible, classes are a great way to create easily-implemented structure around your code and avoid unnecessary redundancies. </p>
+
+<p>From experience, once you understand the concept of classes, it all seems so intuitive and easy to understand, but I know it took me a while to initially get my head around. Examples disseminated a lot of my confusion and apprehension, so hopefully using this Music Festival example can better illustrate classes and their numerous uses.</p>
+
+<p>First off, a class defines a blueprint for a data type by combining data representation (what an object of the class will consist of) and methods to manipulate that data (what actions can be done on the object) into one consolidated package. Let's think about this in context of Music Festivals. What information would we like about ALL our attendees? For starters, maybe just their name and age. </p>
+
+<p>Below depicts the first step of creating any class: the definition. The programming convention is fairly straightforward, but what is the initialize method? The initialize method is a standard Ruby class method which allows you to create class variables when a new object is created - such as what we discussed earlier about all our attendees having a name and age. With just these few lines of code, we can create a new FestivalGoer, as I have done in line 9!</p>
+
+<div class="wrapper"> <img src="https://michellechu77.github.io/blog-posts/images/1.png">
+</div>
+
+<p>So what can FestivalGoers do? We can define some simple class methods to give our FestivalGoers some functionality. Since I like talking to different people at festivals, let's create a method called introduce that interpolates the instance variables @name and @age from our initialization into a simple greetings. Unlike some methods that use local variables and are only active within the scope of that method, instance variables - demarcated by @ - can be accessed within the entire class.</p>
+
+<div class="wrapper"> <img src="https://michellechu77.github.io/blog-posts/images/2.png">
+</div>
+
+<p>If you've ever been to a music festival, you know there are a great many kinds of people - ravers, hippies, indie groupies, and the grumpy parents who got dragged by their children. But for the examples sake, we will create two sub classes of FestivalGoers named Artists and Attendees. An important concept of Ruby is that of inheritance, which allows you to define a class in terms of another class, thus creating relations and recycling code functionalities. As seen below, instead of writing completely new variables and functions, the Artist and Attendee classes will absolve those factors from its superclass FestivalGoer.</p>
+
+<div class="wrapper"> <img src="https://michellechu77.github.io/blog-posts/images/3.png">
+</div>
+
+<p>You can always add additional variables and methods into subclasses such as @genre for Artist and @wristband for Attendee. You can also define specific methods for each subclass; notice how both subclasses have dance methods. Regardless of the same syntactical name, Artist objects will always return *slow dance* or *jump*, while Attendee objects will always return fist pump. Inheritance only works in one direction though, so FestivalGoer objects do not hold a dance method and will return a NoMethodError.</p>
+  </div>
+
+  <div class="wrapper"> <img src="https://michellechu77.github.io/blog-posts/images/4.png">
+</div>
+<div class="wrapper"> <img src="https://michellechu77.github.io/blog-posts/images/5.png">
+</div>
+
+</body>
+
+</html>
