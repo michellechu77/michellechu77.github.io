@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <title>Michu's Dev Story</title>
+  <link rel="stylesheet" type="text/css" href="http://michellechu77.github.io/blog-posts/blogtemplate.css">
+</head>
+
+<body>
+  <header>
+    <img src="http://michellechu77.github.io/blog-posts/images/Color.png">
+    <p> ------------------------------------------- </p>
+    <p> HELLO, I OFTEN GO BY THE NAME MICHU. </p>
+    <p> AND HERE IS MY DEV STORY. </p>
+  </header>
+
+  <div id="post">
+  <h2>Newbie Programmer VS SQL Injection</h2>
+  <p> We newbie programmers have it hard enough - remembering which language requires a semicolon at the end of statements, panicking to reverse a tragic git 'commit', and referring to the Ruby Doc for Array.map! for the hundreth time. So what's the harm in adding one more malicious web battle you have to learn to fight while programming?</p>
+
+  <p>Many webpages allow users to input their own search values, and in this is a potentially deleterious threat called <b>SQL Injection</b> - "a technique where malicious users can inject SQL commands into an SQL statement via webpage input". Newbie programmers, like myself, might be thinking, "What?" So, here's a simple example. </p>
+
+  <p>Provided a field for entering a userID on any site, if there's no front-end validations to prevent users from entering "wrong" input, they can enter a statement such as <b>105 or 1=1</b> in the field. If this is input into a SQL statement such as <b>SELECT * FROM Users WHERE UserID = 105 or 1=1</b>, all rows of the table User will be returned since <b>WHERE 1=1</b> is always true. The danger of this? If the User table contains passwords and personal information, a hacker may gain access to it all!</p>
+
+  <p>If that wasn't frightening enough, here's another example with some "comic"al relief. Imagine the same ubiquitous userID field on a site, except this time we input <b>105; DROP TABLE Suppliers</b>. If the connected database supports batched SQL statements (multiple statements separated by a semicolon), the resulting SQL statement will be <b>SELECT * FROM Users WHERE UserID = 105; DROP TABLE Suppliers</b>. Uh-oh, we lose all our data in the table Suppliers then!
+
+  <div class="wrapper"><img src="http://imgs.xkcd.com/comics/exploits_of_a_mom.png"></div>
+
+  <h3>Protection</h3>
+  <p>Alright, so I've worried you enough with SQL injections, what are some potential means of defense?</p>
+  <ul>
+    <li>Utilize front-end validation to ensure user input adheres to business requirements and to ensure the sifting out of suspicious input.</li>
+    <li>Use SQL parameters to build queries rather than building SQL statements dynamically using string concatenation.</li>
+  </ul>
+
+  <p>The first defense just means popping up error messages or prohibiting submission of data if there is clearly something fishy in the input. For example, some sites may not allow special characters in userIDs. The second involves <b>parameterized queries</b>. As opposed to dynamic queries, parameterized queries use a parameter instead of injecting values directing into commands. This approach allows the database to distinguish between code and data. So, in our first example, if an attacker entered <b>105 or 1=1</b>, the parameterized query would not be vulnerable and would instead look for a username which literally matched the entire string <b>105 or 1=1</b>.</p>
+
+  <p>A high-level warning, this post surely doesn't begin to cover all the ground regarding the potential threats and defense measures against SQL Injection. But awareness is the first step, and I hope y'all - newbie programmers and all - gained even the slightest insight into the web warfare of hackers.</p>
+
+
+  </div>
+
+</body>
+
+</html>
