@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <title>Michu's Dev Story</title>
+  <link rel="stylesheet" type="text/css" href="http://michellechu77.github.io/blog-posts/blogtemplate.css">
+</head>
+
+<body>
+  <header>
+    <img src="http://michellechu77.github.io/blog-posts/images/Color.png">
+    <p> ------------------------------------------- </p>
+    <p> HELLO, I OFTEN GO BY THE NAME MICHU. </p>
+    <p> AND HERE IS MY DEV STORY. </p>
+  </header>
+
+  <div id="post">
+  <p> Roommates, they can be your absolute best friends, or your dreaded worst nightmares. And living in a close vicinity (the next room down, as a matter of fact), there's inevitably copious opportunity for stepping on each others' toes and potential for conflict. With the stress of college, lack of time due to classes, different expectations of living standards, and the pressure to be amicable with my roommate, a few dirty dishes turned into a whole sink overflowing with moldy pans, an apartment-wide fly infestation, obvious emotional conflict, and a strain on my roommate and my relationship. </p>
+
+  <p> I'm sure many can relate to this situation, whether experienced in college, studying abroad, with a significant other, or a friend. What starts out as a seeming small problem of dirty dishes can quickly implode into damaging proportions. The source of this conflict? No, I wouldn't blame it on the crusty forks and oil-laden pots. The root was our lack of mutual communication, respect, and expectations, and a heaping portion of deleterious passive aggressiveness.</p>
+
+  <p> Looking back now, a simple, "Hey, do you mind washing your plates?" or "Can we set up a chores list for each month?" would literally have put the belligerent Mama Bear of a conflict to sleep. But hey, I was younger, less experienced with dealing with conflict, and extremely passive aggressive since I was dealing with a close friend. So, instead of communicating any of the extremely simple, aforementioned solutions above, I kept my mouth shut, let the frustration fester inside me, complained to all our peripheral friends, and pouted to myself all weekend cleaning up my roommate's messes. Good job, Michelle. This is perfect example of what NEVER to do.</p>
+
+  <p>Now, a few years later, I am a wiser woman, able to speak my mind when necessary in amicable, yet direct ways, open to giving and receiving feedback, and carrying significantly better emotional intelligence to gauge a situation and respond appropriately. That year living in that apartment was an incredible challenge for me, but also a fantastic gauge of how much I've grown now that I look back. Though I wish I had had the courage to sit down and communicate my concerns and frustrations to my roommate back then instead of single-handedly killing off the 200 flies that infested our place, it's time to move forward with the valuable lessons I learned and proceed to be a better roommate, friend, and human being in the future!</p>
+
+  </div>
+
+
+</body>
+
+</html>
