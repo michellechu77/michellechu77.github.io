@@ -1,27 +1,15 @@
+html, body {height: 100%;}
+
 body {
 	background-color: white;
 	font-family: Helvetica;
 	color: black;
 }
 
+h3 {
+	background-color: #fadb4c;
+	text-shadow: 1px 1px white;
 
-
-header {
-	text-align: center;
-	font-size: 12px;
-	font-weight: bold;
-	word-spacing: 2px;
-	line-height: 3px;
-}
-
-#sidebar {
-	float:left;
-	padding-left: 30px;
-	width: 15%;
-	height: 100%;
-	font-size: 12px;
-	border: 2px dashed #fadb4c;
-	margin-top: 40px;
 }
 
 #post {
@@ -29,6 +17,90 @@ header {
 	width: 90%;
 	height: 100%;
 	font-size: 14px;
+	padding-top: 54px;
+}
+
+div#header {
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	word-spacing: 0px;
+	line-height: 1px;
+}
+
+div#sidebar {
+  margin: 0;
+  padding: .25em 0em .25em 0em;
+  background: white;
+  width: 13.5em;
+  float:left;
+	padding-left: 20px;
+	padding-right: 30px;
+	font-size: 12px;
+	height: 120%;
+}
+
+div#sidebar ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+	 text-shadow: 0.5px 0.5px #fadb4c;
+	 font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
+
+div#sidebar ul li {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+div#sidebar ul a:link {
+   margin: 0;
+   padding: .2em 0em .2em .4em;
+   text-decoration: none;
+   font-size: small;
+   background-color: white;
+   color: black;
+   display: block;
+}
+
+div#sidebar ul a:active {
+   margin: 0;
+   padding: .25em .5em .25em .5em;
+   text-decoration: none;
+   font-size: small;
+   background: white;
+   color: black;
+   display: block;
+}
+
+div#sidebar ul a:visited {
+   margin: 0;
+   padding:  .25em .5em .25em .5em;
+   text-decoration: none;
+   font-size: small;
+   background: white;
+   color: black;
+   display: block;
+}
+
+div#sidebar ul li a:hover {
+   margin: 0;
+   padding: .2em 0em .2em .4em;
+   text-decoration: none;
+   font-size: small;
+   background-color: #fadb4c;
+   color: black;
+   display: block;
+}
+
+
+hr {
+    border: none;
+    height: 2px;
+    color: black;
+    background-color: black;
 }
 
 .wrapper{
@@ -37,19 +109,3 @@ header {
 	margin: 0 auto;
 	text-align: center;
 }
-
-/*#border {
-	width: 90%;
-	height: 100%;
-	border: 6px dashed #fadb4c;
-	margin: 0 auto;
-	margin-top: 40px;
-}*/
-
-/* #content {
-	width: 98%;
-	height: 100%;
-	background-color: white;
-	color: black;
-	margin: 9px;
-} */
