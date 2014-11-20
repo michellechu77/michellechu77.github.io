@@ -224,13 +224,32 @@ body {
     margin: 7px 0 7px 0;
 }
 
-.lib-panel .lib-row.lib-desc {
+.lib-panel .lib-row.lib-desc,
+.lib-panel .lib-row.lib-header {
     position: relative;
     height: 100%;
     display: block;
-    color: white;
-    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 3px;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+.lib-panel .lib-row.lib-desc {
+  font-size: 14px;
+}
+
+.lib-panel .lib-row.lib-header {
+  font-size: 18px;
+}
+
+.content-container a,
+.lib-panel .lib-row.lib-desc a{
+    color: #f8d764;
+    font-weight: 300;
+}
+
 
 .row-margin-bottom {
     margin-bottom: 20px;
