@@ -79,12 +79,13 @@ body {
   float: right;
 }
 .masthead-brand {
-  margin-left: 10px;
+  margin-left: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .masthead-nav {
+  margin-right: -50px;
   float: right;
 }
 

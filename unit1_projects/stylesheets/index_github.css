@@ -2,14 +2,14 @@ ul{
     list-style:none;
 }
 
-body{
+/*body{
 	background-image:url("https://michellechu77.github.io/blog-posts/images/michupic.png");
 	background-repeat:no-repeat;
 	background-size: cover;
   margin: 0;
   padding-bottom:0px;
 }
-
+*/
 header {
 	width:100%;
 	min-width: 1000px;
@@ -20,6 +20,7 @@ header {
 	top:0;
 	margin: 0px;
 	padding: 0px;
+
 }
 .bmenu{
     padding: 10px;

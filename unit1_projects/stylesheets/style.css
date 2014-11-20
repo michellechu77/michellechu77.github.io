@@ -21,7 +21,7 @@ section.module.content {
   padding: 40px 0;
 }
 section.module.parallax {
-  height: 400px;
+  height: 300px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -30,18 +30,22 @@ section.module.parallax {
   -o-background-size: cover;
   background-size: cover;
 }
-section.module.parallax h1 {
+section.module.parallax h3 {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 10px;
-  line-height: 350px;
+  font-size: 23px;
+  line-height: 35px;
+  padding-left: 65px;
+  padding-top: 250px;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 section.module.parallax-1 {
   background-image:url("https://michellechu77.github.io/blog-posts/images/michupic.png");
-  height: 600px;
+  height: 100%;
+  z-index: -100;
 }
 
 section.module.parallax-1 h1 {
