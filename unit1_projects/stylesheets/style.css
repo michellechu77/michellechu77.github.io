@@ -6,7 +6,7 @@ section.module:last-child {
 }
 section.module h2 {
   margin-bottom: 40px;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-size: 30px;
 }
 section.module p {
@@ -46,7 +46,7 @@ section.module.parallax h3 {
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 19px;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Dosis', sans-serif;
   padding-left: 65;
   padding-top: 80px;
   font-weight: 700;
@@ -68,18 +68,18 @@ section.module.parallax-1 h1 {
 section.module.parallax-2 {
   background-image:url("../gobug_screenshot.png");
   position:relative;
-  z-index: 120;
+  z-index: 100;
 }
 section.module.parallax-3 {
   background-image: url("../pen.jpg");
   position:relative;
-  z-index: 120;
+  z-index: 100;
 }
 
 section.module.parallax-4 {
   background-image: url("../business.jpg");
    position:relative;
-  z-index: 120;
+  z-index: 100;
 }
 
 #scroll-wrapper {

@@ -43,7 +43,8 @@ body {
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   font-family: 'Karla', sans-serif;
-
+  position: relative;
+  z-index:1000;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -64,19 +65,11 @@ body {
   margin-left: auto;
 }
 
-/* Padding for spacing */
 .inner {
   padding: 30px;
   width: 170%;
 }
 
-/*
- * Header
- */
-
-.masthead-nav {
-  float: right;
-}
 .masthead-brand {
   margin-left: 15px;
   margin-top: 10px;
@@ -85,7 +78,6 @@ body {
 
 .masthead-nav {
   margin-right: -50px;
-  float: right;
 }
 
 .masthead-nav > li {
@@ -106,8 +98,7 @@ body {
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
+  border-bottom-color: #f8d764;
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
@@ -138,9 +129,14 @@ body {
   font-weight: bold;
 }
 
+.lead {
+  text-align: center;
+  margin-top: 15%;
+}
+
 .sidebar {
-  z-index: 100;
   position: fixed;
+  z-index: 30;
   top: 35%;
   right: -15px;
   line-height: 3px;
@@ -158,21 +154,18 @@ body {
   padding-left: 20px;
 }
 
-.lead {
-  text-align: center;
-  margin-top: 15%;
+.content-wrapper {
+  background: black;
+  position:relative;
+  z-index: 20;
 }
-
-
-/*
- * Affix and center
- */
 
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
     top: 0;
+    z-index: 10;
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
@@ -189,6 +182,8 @@ body {
   .masthead,
   .cover-container {
     width: 700px;
+    position: fixed;
+    z-index: 10;
   }
 }
 
