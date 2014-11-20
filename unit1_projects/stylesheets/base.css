@@ -94,12 +94,30 @@ main {
   background-color: #fff;
 }
 
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
+.content-container {
+  margin-right: auto;
+  margin-left: auto;
 }
+
+.content-container h4{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 19px;
+  font-family: 'Karla', sans-serif;
+  margin-top: -10px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.content-container p{
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 3px;
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 
 /* ============================================================
   INFO BAR
