@@ -1,0 +1,270 @@
+/*
+
+* Based on Cover by https://twitter.com/mdo"  @mdo
+* added cover image and background color to match (green)
+*
+
+*/
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+/*css for full size background image*/
+  background: black no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  height: 100%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  font-family: 'Karla', sans-serif;
+  position: relative;
+  z-index:1000;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.inner {
+  padding: 30px;
+  width: 170%;
+}
+
+.masthead-brand {
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav {
+  margin-right: -50px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.95);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #f8d764;
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #f8d764;
+  border-bottom-color: white;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.lead {
+  text-align: center;
+  margin-top: 15%;
+}
+
+.sidebar {
+  position: fixed;
+  z-index: 30;
+  top: 35%;
+  right: -15px;
+  line-height: 3px;
+}
+
+.sidebar ul {
+  line-height: 3;
+}
+
+.sidebar ul li img{
+  height:40%;
+  width:40%;
+  text-align: center;
+  margin-right: 12px;
+  padding-left: 20px;
+}
+
+.content-wrapper {
+  background: black;
+  position:relative;
+  z-index: 20;
+}
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .cover-container {
+    width: 700px;
+    position: fixed;
+    z-index: 10;
+  }
+}
+
+#project-grid {
+  padding-left: 80px;
+}
+
+.lib-item {
+  width:45%;
+}
+
+.lib-panel img {
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+}
+
+.lib-panel .col-md-6 {
+    background-color: black;
+}
+
+
+.lib-panel .lib-row {
+    padding: 0 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 0px 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header .lib-header-seperator {
+    height: 2px;
+    width: 100%;
+    background-color: #d9d9d9;
+    margin: 7px 0 7px 0;
+}
+
+.lib-panel .lib-row.lib-desc,
+.lib-panel .lib-row.lib-header {
+    position: relative;
+    height: 100%;
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 3px;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.lib-panel .lib-row.lib-desc {
+  font-size: 14px;
+}
+
+.lib-panel .lib-row.lib-header {
+  font-size: 18px;
+}
+
+.content-container a,
+.lib-panel .lib-row.lib-desc a{
+    color: #f8d764;
+    font-weight: 300;
+}
+
+
+.row-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.hr-line {
+  border-bottom: 2px dashed white;
+  height: 2px;
+  width:60%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
