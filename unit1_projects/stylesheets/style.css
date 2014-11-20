@@ -59,6 +59,17 @@ section.module.parallax-4 {
 /*  background-image: url("../pen.jpg");*/
 }
 
+#scroll-wrapper {
+  position:absolute;
+  bottom:20px;
+  left:45%;
+}
+
+#scroll {
+  height: 50%;
+  width: 50%
+}
+
 @media all and (min-width: 600px) {
   section.module h2 {
     font-size: 42px;
