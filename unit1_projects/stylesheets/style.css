@@ -10,8 +10,7 @@ section.module h2 {
   font-size: 30px;
 }
 section.module p {
-  margin-bottom: 40px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300;
 }
 section.module p:last-child {
@@ -30,14 +29,28 @@ section.module.parallax {
   -o-background-size: cover;
   background-size: cover;
 }
+
 section.module.parallax h3 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 23px;
+  font-family: 'Dosis', sans-serif;
   line-height: 35px;
   padding-left: 65px;
   padding-top: 250px;
   font-weight: 700;
   text-align: left;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 19px;
+  font-family: 'Karla', sans-serif;
+  padding-left: 65;
+  padding-top: 80px;
+  font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -60,13 +73,13 @@ section.module.parallax-3 {
 }
 
 section.module.parallax-4 {
-/*  background-image: url("../pen.jpg");*/
+  background-image: url("../business.jpg");
 }
 
 #scroll-wrapper {
   position:absolute;
   bottom:20px;
-  left:45%;
+  left:46%;
 }
 
 #scroll {
@@ -79,7 +92,7 @@ section.module.parallax-4 {
     font-size: 42px;
   }
   section.module p {
-    font-size: 20px;
+    font-size: 15px;
   }
   section.module.parallax h1 {
     font-size: 75px;
