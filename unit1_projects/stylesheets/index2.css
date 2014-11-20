@@ -258,3 +258,13 @@ body {
 .no-padding {
     padding: 0px;
 }
+
+.hr-line {
+  border-bottom: 2px dashed white;
+  height: 2px;
+  width:60%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
