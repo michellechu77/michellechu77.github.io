@@ -56,7 +56,7 @@ section.module.parallax h1 {
 }
 
 section.module.parallax-1 {
-  background-image:url("https://michellechu77.github.io/blog-posts/images/michupic.png");
+  background-image:url("https://michellechu77.github.io/michu_portfolio/images/michupic.png");
   height: 100%;
   position:relative;
 }
@@ -66,18 +66,18 @@ section.module.parallax-1 h1 {
 }
 
 section.module.parallax-2 {
-  background-image:url("../gobug_screenshot.png");
+  background-image:url("http://michellechu77.github.io/michu_portfolio/images/gobug_screensho.png");
   position:relative;
   z-index: 100;
 }
 section.module.parallax-3 {
-  background-image: url("../pen.jpg");
+  background-image: url("http://michellechu77.github.io/michu_portfolio/images/pen.jpg");
   position:relative;
   z-index: 100;
 }
 
 section.module.parallax-4 {
-  background-image: url("../business.jpg");
+  background-image: url("http://michellechu77.github.io/michu_portfolio/images/business.jpg");
    position:relative;
   z-index: 100;
 }
