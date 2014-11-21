@@ -260,9 +260,9 @@ body {
 }
 
 .hr-line {
-  border-bottom: 2px dashed white;
+  border-bottom: 2px solid gray;
   height: 2px;
-  width:60%;
+  width: 68%;
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
